@@ -1,0 +1,67 @@
+{% extends "main/wrapper.html" %}
+{% block content %}
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+		{% include "main/includes/Topline_html.html" %}
+
+        <!--Home page style-->
+        <!--All repair page style-->
+        <header class="home-bg">
+		<div class="overlay-img">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="header-details">
+							<h1>iPhone</h1>
+							<a class="repair-brand" href="{% url 'repair_iphone' %}"><img src="/static/main/images/11.png" alt="iPhone" /></a><br>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="header-details">
+							<h1>iPad<br></h1>
+							<a class="repair-brand" href="{% url 'repair_ipad' %}"><img src="/static/main/images/ipad1.png" alt="iPad" /></a><br>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="header-details">
+							<h1>iPod<br></h1>
+							<a class="repair-brand" href="{% url 'repair_ipod' %}"><img src="/static/main/images/ipod1.png" alt="iPod" /></a><br>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="header-details">
+							<h1>MacBook<br></h1>
+							<a class="repair-brand" href="{% url 'repair_macbook' %}"><img src="/static/main/images/macbook1.png" alt="MacBook" /></a><br>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="header-details">
+							<h1>Apple Watch<br></h1>
+							<a class="repair-brand" href="{% url 'repair_watch' %}"><img src="/static/main/images/watch1.png" alt="Watch" /></a><br>
+						</div>
+					</div>
+
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="header-details">
+							<h1>iMac<br></h1>
+							<a class="repair-brand" href="{% url 'repair_imac' %}"><img src="/static/main/images/imac1.png" alt="iMac" /></a><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</header>
+
+
+        <!--Footer-->
+        {% include "main/includes/footer_html.html" %}
+    </body>
+</html>
+{% endblock %}

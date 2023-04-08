@@ -1,0 +1,106 @@
+{% extends "main/wrapper.html" %}
+{% block content %}
+<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        {% include "main/includes/Topline_html.html" %}
+
+
+        <!--Home page style-->
+        <header class="home-bg">
+		<div class="overlay-img">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<div class="header-details-index">
+							<h1>ІНТЕЛЕКТ<br> БЕЗ АМБІЦІЙ - НІЩО</h1>
+							<h6>Ми невеликий, але вражаючий профісіоналізмом сервіс!</h6>
+							<button class="btn btn-default" ><a href="https://www.instagram.com/store.whiteapple/">Читати новини</a></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        </header>
+
+        <!-- Sections -->
+        <section id="promotion-area" class="sections">
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="row">
+					<div class="col-sm-4 col-sm-12 col-xs-12">
+						<div class="promotion">
+
+						<h1>З нами <br> ви отримаєте якість</h1>
+						<p>З нами ви отримаєте якість - це є нашим головним пріоритетом.</p>
+
+						</div>
+					</div>
+
+					<div class="col-sm-4 col-sm-12 col-xs-12">
+						<div class="promotion">
+
+						<h1>Безкоштовно <br>ФАКТИЧНО Безкоштовно</h1>
+						<p>Ми справедливо оцінюємо свою роботу та послуги.</p>
+
+						</div>
+					</div>
+
+					<div class="col-sm-4 col-sm-12 col-xs-12">
+						<div class="promotion">
+
+						<h1>Просто <br> Зручно </h1>
+						<p>Пропонуємо вам декілька варіантів оплати: Крипта, безнал, готівка.</p>
+
+						</div>
+					</div>
+
+                </div>
+            </div> <!-- /container -->
+        </section>
+
+
+		<section id="our-team" class="sections">
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="row">
+						<div class="team-heading">
+							<h1>Наша команда</h1>
+							<p>Ми раді вас вітати</p>
+						</div>
+
+				<div class="team-member">
+
+					<div class="col-sm-4 col-sm-12 col-xs-12">
+						<div class="team">
+							<img src="static/main/images/man11.png" alt="" />
+							<div class="team-info">
+								<h2>Сергій</h2>
+								<h5>CEO</h5>
+								<p>Любить каву. <br>Завжди на авто. <br>Обожнює Apple.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4 col-sm-12 col-xs-12">
+						<div class="team">
+							<img src="static/main/images/man22.png" alt="" />
+							<div class="team-info">
+								<h2>Вадим</h2>
+								<h5>Адміністратор-директор</h5>
+								<p>Любить книги. <br>Завжди усміхнений. <br>Професіонал свого діла!</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				</div>
+
+            </div> <!-- /container -->
+        </section>
+
+        <!--Footer-->
+        {% include "main/includes/footer_html.html" %}
+{% endblock %}

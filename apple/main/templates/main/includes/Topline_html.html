@@ -1,0 +1,41 @@
+{% block content %}
+		<div class='preloader'><div class='loaded'>&nbsp;</div></div>
+        <nav class="mainmenu navbar navbar-default navbar-fixed-top">
+            <div class="container">
+
+                <div class="row">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <div class="brand-bg">
+                            <a class="navbar-brand" href="{% url 'index' %}"><img src="/static/main/images/logo2.png" alt="White Apple Store" /></a>
+                        </div>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul  class="nav navbar-nav pull-right">
+
+                            <li><a href="{% url 'index' %}">Про нас</a></li>
+                            <li><a href="{% url 'repair' %}">Ремонт</a></li>
+                            <li><a href="{% url 'store' %}">Магазин</a></li>
+                            <li><a href="{% url 'contacts' %}">Контакти</a></li>
+                            <li><a href="https://www.instagram.com/store.whiteapple/"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com/TiuvaievS"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/AppleMeredian/about"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://t.me/goWhiteAppleStore"><i class="fa fa-telegram"></i></a></li>
+
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+
+            </div><!-- /.container-fluid -->
+        </nav>
+{% endblock %}
